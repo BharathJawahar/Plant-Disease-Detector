@@ -12,7 +12,7 @@ body {
   align-items: center;  
   flex-wrap: wrap;
   min-height: 100vh;
-  background: #232427;
+  background: #ffffff;
 }
 
 body .container {
@@ -54,7 +54,7 @@ body .container .card .box {
   left: 20px;
   right: 20px;
   bottom: 20px;
-  background: #2a2b2f;
+  background: #021e64;
   border-radius: 15px;
   display: flex;
   justify-content: center;

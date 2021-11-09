@@ -31,7 +31,7 @@
                     <h3>Upload Image</h3>
                     <img src="" id="image">
                     <form action="" style="align-items: center;" method="post" id="myForm">
-                        <input type="file" name="file" id="file1" style="align-self: center; margin-left: 100px;">
+                        <input type="file" name="file" id="file1" style="align-self: center; margin-left: 100px;" onchange="loadFile(event)">
                         <button type="submit" onclick="predictApple()"></button>
                         <a onclick="predictApple()">Predict Disease</a>
                     </form>
@@ -41,15 +41,16 @@
     </div>
 
     <div class="container">
-        <div class="card" style="height: 250px;">
+        <div class="card">
             <div class="box">
                 <div class="content">
                     <h3 >Disease</h3>
+                    <img id="img" style="height: 200px;">
                     <a id="disease">None</a>
                 </div>
             </div>
         </div>
-        <div class="card" style="height: 250px;">
+        <div class="card">
             <div class="box">
                 <div class="content">
                     <h3 >Caused by</h3>
@@ -74,8 +75,6 @@
             </div>
         </div>
     </div>
-
-
 </body>
 
 </html>
