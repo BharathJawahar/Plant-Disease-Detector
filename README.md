@@ -12,7 +12,7 @@ If you don't have any image for testing, use the image in Dataset Folder
 
 ## Build Yourself
 
-TO build to project completly from scrach from remote machine, follow these instructions
+To build to project completly from scrach from remote machine, follow these instructions
 
 1. Find and download a Training Dataset for Plant Disease. (Or feel free to use this dataset. Its the filtered and custom version of Village Plant Dataset)
 2. Train a Model for each plant using CNN. (Source code is in Code directory)
