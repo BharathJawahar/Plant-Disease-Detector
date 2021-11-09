@@ -13,7 +13,10 @@ async function predictApple() {
       const response = await fetch("http://localhost:8000/predictApple", requestOptions)
       var data = await response.json();
       console.log(data);
-      document.getElementById("cause").innerHTML = data.class
+      document.getElementById("disease").innerHTML = data.class
+      document.getElementById("cause").innerHTML = data.cause
+      document.getElementById("dis").innerHTML = data.dispcription
+      document.getElementById("treat").innerHTML = data.treatment
     }
 
 
