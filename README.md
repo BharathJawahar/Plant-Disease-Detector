@@ -2,7 +2,7 @@
 
 Web Application which predicts Plant's Disease using ML Models
 
-1. Run api.py
+1. Run api.py in localhost 8000
 2. Open index.html in browser
 
 Username : admin
