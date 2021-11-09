@@ -1,13 +1,19 @@
-function predictApple() {
+async function predictApple() {
     const thisForm = document.getElementById('myForm');
-    let response = await fetch('http://localhost:5500/files', {
-        method: 'POST',
-        body: new FormData(thisForm)
-    });
+    var thisFile = document.getElementById('file1');
+    var name
+    var formdata = new FormData();
+    formdata.append("file", thisFile.files[0]);
 
-    let result = await response.json();
-    alert(result.message)
-    console.log(result)
-}
+    var requestOptions = {
+        method: 'POST',
+        body: formdata,
+        redirect: 'follow'
+      };
+      const response = await fetch("http://localhost:8000/predictApple", requestOptions)
+      var data = await response.json();
+      console.log(data);
+      document.getElementById("cause").innerHTML = data.class
+    }
 
 

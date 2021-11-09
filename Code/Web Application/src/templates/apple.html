@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="../script/apple.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" style="height: 150px; width: 3000px;">
+            <div class="box">
+                <h1 style="color: aliceblue; text-align: center;">Apple Plant Disease Detector</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card" style="height: 250px;">
+            <div class="box">
+                <div class="content">
+                    <h3>Upload Image</h3>
+                    <img src="" id="image">
+                    <form action="" style="align-items: center;" method="post" id="myForm">
+                        <input type="file" name="file" id="file1" style="align-self: center; margin-left: 100px;">
+                        <button type="submit" onclick="predictApple()"></button>
+                        <a onclick="predictApple()">Predict Disease</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card" style="height: 250px;">
+            <div class="box">
+                <div class="content">
+                    <h3 >Caused by</h3>
+                    <a id="cause">None</a>
+                </div>
+            </div>
+        </div>
+        <div class="card" style="height: 250px;">
+            <div class="box">
+                <div class="content">
+                    <h3>Discription</h3>
+                    <p id="dis">None</p>
+                </div>
+            </div>
+        </div>
+        <div class="card" style="height: 250px;">
+            <div class="box">
+                <div class="content">
+                    <h3>Treatment</h3>
+                    <p id="treate"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -24,7 +24,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-MODEL_POTATO = tf.keras.models.load_model("../../../Models/Potato.h5")
+MODEL_POTATO = tf.keras.models.load_model("Models/Potato.h5")
 POTATO_CLASS_NAMES = ["Early Blight", "Late Blight", "Healthy"]
 POTATO_CAUSE = ["Fungal pathogen called Alternaria solani",
                 "Fungus like oomycete pathogen called Phytophthora infestans", 
@@ -318,4 +318,4 @@ async def predict(
     }
 
 '''
-uvicorn.run(app, host='localhost', port=5500)
+uvicorn.run(app, host='localhost', port=8000)
