@@ -12,7 +12,9 @@ body {
   align-items: center;
   flex-wrap: wrap;
   min-height: 100vh;
-  background: #ffff;
+  background-image: url(https://images.unsplash.com/photo-1533119408463-b0f487583ff6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80);
+  background-repeat:repeat; 
+  background-size: cover;
 }
 
 body .container {
@@ -54,7 +56,7 @@ body .container .card .box {
   left: 20px;
   right: 20px;
   bottom: 20px;
-  background: #021e64;
+  background: #3b8645;
   border-radius: 15px;
   display: flex;
   justify-content: center;
@@ -120,3 +122,82 @@ body .container .card .box .content a:hover {
   background: #fff;
   color: #000;
 }
+
+:root {
+  --underline-height: .5em;
+  --transition-duration: .5s;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  min-height: 100vh;
+}
+
+nav {
+  position: relative;
+  box-shadow: 0 1em 2em rgba(0, 0, 0, 0.05);
+}
+
+.underline {
+  display: block;
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  left: 0;
+  height: var(--underline-height);
+  width: 20%;
+  background: black;
+  pointer-events: none;
+  mix-blend-mode: multiply;
+  transition: transform var(--transition-duration) ease-in-out;
+}
+.underline:nth-child(1) {
+  background: yellow;
+  transition: calc(var(--transition-duration) * .8);
+}
+.underline:nth-child(2) {
+  background: cyan;
+  transition: calc(var(--transition-duration) * 1.2);
+}
+.underline:nth-child(3) {
+  background: magenta;
+}
+
+a {
+  display: inline-block;
+  z-index: 10;
+  padding: 1em 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+nav.black .underline {
+  background: #222;
+  border-radius: 0.25em;
+  height: calc(var(--underline-height) / 2);
+  mix-blend-mode: initial;
+}
+
+nav.full {
+  font-weight: bold;
+  background: #111;
+  color: white;
+}
+nav.full .underline {
+  height: 100%;
+  background: gold;
+}
+
+nav.retro .underline {
+  border-radius: 100% 100% 0 0;
+}
+nav.retro .underline:nth-child(1) {
+  background: gold;
+}
+nav.retro .underline:nth-child(2) {
+  background: dodgerblue;
+}
+nav.retro .underline:nth-child(3) {
+  background: tomato;
+}
+

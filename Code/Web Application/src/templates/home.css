@@ -12,7 +12,7 @@ body {
   align-items: center;  
   flex-wrap: wrap;
   min-height: 100vh;
-  background: #232427;
+  background-image: image-set(url(https://images.unsplash.com/photo-1470439058509-295625152166?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80));
 }
 
 body .container {

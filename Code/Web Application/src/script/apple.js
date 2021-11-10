@@ -17,6 +17,7 @@ async function predictApple() {
       document.getElementById("cause").innerHTML = data.cause
       document.getElementById("dis").innerHTML = data.dispcription
       document.getElementById("treat").innerHTML = data.treatment
+      document.getElementById("prevention").innerHTML = data.prevention
     }
 
     var loadFile = function(event) {
@@ -26,6 +27,17 @@ async function predictApple() {
         URL.revokeObjectURL(output.src) // free memory
       }
     };
+
+
+    function ul(index) {
+      console.log('click!' + index)
+      
+      var underlines = document.querySelectorAll(".underline");
+    
+      for (var i = 0; i < underlines.length; i++) {
+        underlines[i].style.transform = 'translate3d(' + index * 100 + '%,0,0)';
+      }
+    }
 
 
 

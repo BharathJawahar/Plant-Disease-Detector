@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+
 
     <link rel="stylesheet" href="style.css">
     <script src="../script/apple.js"></script>
@@ -18,6 +20,12 @@
 </head>
 
 <body>
+    <nav style="width: 100%; text-align: end; color: white; font-weight: 1000;">
+            <a href="../home.html" style="width: 150px;">Home</a>
+            <a href="../contact.html" style="width: 150px;">Contact Us</a>
+            <a href="../../../../index.html" style="width: 150px;">Log out</a>
+      </nav>
+        <br>
     <div class="container">
         <div class="card" style="height: 150px; width: 3000px;">
             <div class="box">
@@ -25,21 +33,25 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="card" style="height: 250px;">
-            <div class="box">
-                <div class="content">
-                    <h3>Upload Image</h3>
-                    <img src="" id="image">
-                    <form action="" style="align-items: center;" method="post" id="myForm">
-                        <input type="file" name="file" id="file1" style="align-self: center; margin-left: 100px;" onchange="loadFile(event)">
-                        <button type="submit" onclick="predictApple()"></button>
-                        <a onclick="predictApple()">Predict Disease</a>
-                    </form>
+    <nav style="width: 100%; text-align: end; color: white; font-weight: 1000;">
+    </nav>
+        <div class="container">
+            <div class="card" style="height: 250px;">
+                <div class="box">
+                    <div class="content">
+                        <h3>Upload Image</h3>
+                        <img src="" id="image">
+                        <form action="" style="align-items: center;" method="post" id="myForm">
+                            <input type="file" name="file" id="file1" style="align-self: center; margin-left: 60px;" onchange="loadFile(event)">
+                            <button type="submit" onclick="predictApple()"></button>
+                            <a onclick="predictApple()">Predict Disease</a>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+        <nav style="width: 100%; text-align: end; color: white; font-weight: 1000;">
+        </nav>
 
     <div class="container">
         <div class="card">
@@ -72,6 +84,14 @@
                 <div class="content">
                     <h3>Treatment</h3>
                     <p id="treat"></p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="box">
+                <div class="content">
+                    <h3>Prevention</h3>
+                    <p id="prevention"></p>
                 </div>
             </div>
         </div>

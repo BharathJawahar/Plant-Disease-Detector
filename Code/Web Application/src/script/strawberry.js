@@ -17,7 +17,9 @@ async function predictApple() {
         document.getElementById("cause").innerHTML = data.cause
         document.getElementById("dis").innerHTML = data.dispcription
         document.getElementById("treat").innerHTML = data.treatment
+        document.getElementById("prevention").innerHTML = data.prevention
       }
+  
   
       var loadFile = function(event) {
         var output = document.getElementById('img');
