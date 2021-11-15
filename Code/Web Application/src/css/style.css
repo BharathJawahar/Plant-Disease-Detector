@@ -39,7 +39,7 @@ body .container .card {
 }
 
 body .container .card:nth-child(1) .box .content a {
-  background: #2196f3;
+  background: #ffffff;
 }
 
 body .container .card:nth-child(2) .box .content a {

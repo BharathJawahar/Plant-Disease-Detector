@@ -47,7 +47,7 @@ function signup() {
     }
     username = sessionStorage.getItem("username").split(",")
     password = sessionStorage.getItem("password").split(",")
-    if(document.getElementById("username").value == null || document.getElementById("name").value == null || document.getElementById("password").value == null) {
+    if(document.getElementById("username").value == null || document.getElementById("password").value == null) {
         alert("Fill the Sign Up form completly")    
         sessionStorage.setItem("username", username)
         sessionStorage.setItem("password", password)
