@@ -6,7 +6,6 @@ astunparse==1.6.3
 attrs==21.2.0
 backcall==0.2.0
 bleach==4.1.0
-btrfsutil==5.15
 cachetools==4.2.4
 cffi==1.14.6
 chardet==4.0.0
