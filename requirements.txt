@@ -10,7 +10,6 @@ cachetools==4.2.4
 cffi==1.14.6
 chardet==4.0.0
 click==8.0.3
-cloud-init==21.3
 colorama==0.4.4
 configobj==5.1.0.dev0
 cryptography==35.0.0
