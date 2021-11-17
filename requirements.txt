@@ -1,0 +1,8 @@
+tensorflow==2.5.0
+numpy
+pandas
+python-multipart
+matplotlib
+matplot
+uvicorn
+fastapi
